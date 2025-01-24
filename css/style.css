@@ -1329,12 +1329,25 @@ a:hover .tooltip{
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
+.button-responsive{
+  display: none;
+  text-align: center;
+  color: #ddd;
+  font-size: 23px;
+  z-index: 2;
+  border-radius: 0;
+  background: transparent;
+
+  -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
 
 .responsive-nav-button:hover{color: #d10a11;}
 
 .responsive-nav-button:before{
-  font-family: 'fontello';
-  content: "\e8bb";
+  /* font-family: 'fontello'; */
+  /* content: "\e8bb"; */
 }
 
 header.style-2 .responsive-nav-button{
@@ -1347,6 +1360,15 @@ header.style-2 .responsive-nav-button:hover{
 }
 
 #wrapper #advanced-menu-hide{
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+ -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#wrapper .advanced-menu-hide{
   visibility: hidden;
   pointer-events: none;
   -webkit-transform: translateX(200%);
